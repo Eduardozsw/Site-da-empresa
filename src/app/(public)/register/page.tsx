@@ -18,7 +18,7 @@ export default function LoginPage() {
                     <label className="font-bold">Confirme sua Senha:</label>
                     <input className="border-2 w-[275px] text-center rounded-lg" />
                 </div>
-                <div>
+                <div className="items-center">
                     <button type="submit" className="font-bold border-2 p-1 mt-2 rounded-lg">Cadastrar</button>
                 </div>
             </form>

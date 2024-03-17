@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "../global.css";
+import "./global.css";
 import Image from "next/image";
 import Logo from "@/assets/Logo.png";
 import Link from 'next/link';
@@ -26,14 +26,14 @@ export default function RootLayout({
           <span className="self-center text-1xl font-semibold whitespace-nowrap">OptimusTech</span>
         </div>
         <div className="flex items-center space-x-3 rtl:space-x-reverse">
-          <Link href='/'className="text-1xl font-semibold">Home</Link>
+          <Link href='/home'className="text-1xl font-semibold">Home</Link>
           <Link href='/' className="text-1xl font-semibold">Inscricoes</Link>
           <Link href='/' className="text-1xl font-semibold">Contratos</Link>
           <Link href='/' className="text-1xl font-semibold">Pagamentos</Link>
           <Link href='/' className="text-1xl font-semibold">configurações</Link>
         </div>
         <div className="space-x-3">
-          <Link href='/login' className="buto p-3 rounded-lg text-1xl font-semibold text-white">Sair</Link>
+          <Link href='/home' className="buto p-3 rounded-lg text-1xl font-semibold text-white">Sair</Link>
         </div>
       </nav>
         {children}

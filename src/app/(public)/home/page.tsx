@@ -1,5 +1,4 @@
 'use client'
-
 import Image from "next/image";
 import time from "@/assets/Image.png";
 import {Splide, SplideSlide} from '@splidejs/react-splide';
