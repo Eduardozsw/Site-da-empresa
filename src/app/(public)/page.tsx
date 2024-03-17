@@ -1,8 +1,6 @@
 'use client'
 
 import Image from "next/image";
-import Logo from "@/assets/Logo.png";
-import Link from 'next/link';
 import time from "@/assets/Image.png";
 import {Splide, SplideSlide} from '@splidejs/react-splide';
 import '@splidejs/splide/css';
@@ -10,22 +8,6 @@ import '@splidejs/splide/css';
 export default function Home() {
   return (
     <main className="">
-      <nav className="flex flex-wrap items-center justify-around mx-auto p-4 ">
-        <div className="flex items-center space-x-3 rtl:space-x-reverse"> {/* tag a ta servindo pra "alinhar" o texto*/}
-          <Image alt="Imagem da logo" width={32} height={32} src={Logo} />
-          <span className="self-center text-1xl font-semibold whitespace-nowrap">OptimusTech</span>
-        </div>
-        <div className="flex items-center space-x-3 rtl:space-x-reverse">
-          <Link href='/' className="text-1xl font-semibold">Home</Link>
-          <Link href='/' className="text-1xl font-semibold">Produtos</Link>
-          <Link href='/' className="text-1xl font-semibold">Recursos</Link>
-          <Link href='/' className="text-1xl font-semibold">Sobre nós</Link>
-        </div>
-        <div className="space-x-3">
-          <Link href='/' className="text-1xl font-semibold">Entrar</Link>
-          <Link href='/' className="buto text-1xl font-semibold p-3 rounded-lg text-white">Cadastrar</Link>
-        </div>
-      </nav>
       <section className=" p-20 flex flex-col justify-center items-center">
         <h1 className="sobre font-semibold">Sobre nós</h1>
         <h1 className="p-4 text-5xl font-bold">Por que somos diferentes?</h1>
@@ -87,7 +69,7 @@ export default function Home() {
       </section>
       {/*Desenvolvimento de software*/}
       <div className="flex flex-col px-80 justify-center items-center gap-6">
-        <h1 className="seccolor font-bold text-2xl">Design</h1>
+        <h1 className="seccolor font-bold text-2xl">Desenvolvimento de Software</h1>
       </div>
       <section className="flex flex-col px-80 justify-center items-center gap-6">
         <div className="border-2 w-[700px] rounded-lg">
