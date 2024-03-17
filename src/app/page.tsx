@@ -1,30 +1,30 @@
 'use client'
 
 import Image from "next/image";
-import Logo from "@/assets/Logo.png"
-import Link from 'next/link'
-import time from "@/assets/Image.png"
-import { Splide, SplideSlide } from '@splidejs/react-splide';
-import '@splidejs/react-splide/css'
+import Logo from "@/assets/Logo.png";
+import Link from 'next/link';
+import time from "@/assets/Image.png";
+import {Splide, SplideSlide} from '@splidejs/react-splide';
+import '@splidejs/splide/css';
 
 export default function Home() {
   return (
     <main className="">
       <nav className="flex flex-wrap items-center justify-around mx-auto p-4 ">
-        <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse"> {/* tag a ta servindo pra "alinhar" o texto*/}
+        <div className="flex items-center space-x-3 rtl:space-x-reverse"> {/* tag a ta servindo pra "alinhar" o texto*/}
           <Image alt="Imagem da logo" width={32} height={32} src={Logo} />
           <span className="self-center text-1xl font-semibold whitespace-nowrap">OptimusTech</span>
-        </a>
-        <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
+        </div>
+        <div className="flex items-center space-x-3 rtl:space-x-reverse">
           <Link href='/' className="text-1xl font-semibold">Home</Link>
           <Link href='/' className="text-1xl font-semibold">Produtos</Link>
           <Link href='/' className="text-1xl font-semibold">Recursos</Link>
           <Link href='/' className="text-1xl font-semibold">Sobre nós</Link>
-        </a>
-        <a className="space-x-3">
+        </div>
+        <div className="space-x-3">
           <Link href='/' className="text-1xl font-semibold">Entrar</Link>
           <Link href='/' className="buto text-1xl font-semibold p-3 rounded-lg text-white">Cadastrar</Link>
-        </a>
+        </div>
       </nav>
       <section className=" p-20 flex flex-col justify-center items-center">
         <h1 className="sobre font-semibold">Sobre nós</h1>
@@ -66,24 +66,23 @@ export default function Home() {
         <h1 className="seccolor font-bold text-2xl">Design</h1>
       </div>
       <section className="flex flex-col px-80 justify-center items-center gap-6">
-
         <div className="border-2 w-[700px] rounded-lg">
-          <a href="#" className="flex flex-col p-10">
+          <div className="flex flex-col p-10">
             <h1 className="font-bold text-2xl">Product Designer</h1>
-            <a href="" className="flex flex-wrap pt-5">
+            <div className="flex flex-wrap pt-5">
               <h1 className="font-semibold">Full-time</h1>
               <h1 className="pl-20">Faixa salarial: R$7.000</h1>
-            </a>
-          </a>
+            </div>
+          </div>
         </div>
         <div className="border-2 w-[700px] rounded-lg">
-          <a href="#" className="flex flex-col p-10">
+          <div className="flex flex-col p-10">
             <h1 className="font-bold text-2xl">UX Designer</h1>
-            <a href="" className="flex flex-wrap pt-5">
+            <div className="flex flex-wrap pt-5">
               <h1 className="font-semibold">Full-time</h1>
               <h1 className="pl-20">Faixa salarial: R$6.000</h1>
-            </a>
-          </a>
+            </div>
+          </div>
         </div>
       </section>
       {/*Desenvolvimento de software*/}
@@ -91,44 +90,43 @@ export default function Home() {
         <h1 className="seccolor font-bold text-2xl">Design</h1>
       </div>
       <section className="flex flex-col px-80 justify-center items-center gap-6">
-
         <div className="border-2 w-[700px] rounded-lg">
-          <a href="#" className="flex flex-col p-10">
+          <div className="flex flex-col p-10">
             <h1 className="font-bold text-2xl">Desenvolvedor(a) iOS</h1>
-            <a href="" className="flex flex-wrap pt-5">
+            <div className="flex flex-wrap pt-5">
               <h1 className="font-semibold">Full-time</h1>
               <h1 className="pl-20">Faixa salarial: R$10.000</h1>
-            </a>
-          </a>
+            </div>
+          </div>
         </div>
         <div className="border-2 w-[700px] rounded-lg">
-          <a href="#" className="flex flex-col p-10">
+          <div className="flex flex-col p-10">
             <h1 className="font-bold text-2xl">Desenvolvedor(a) Front-end</h1>
-            <a href="" className="flex flex-wrap pt-5">
+            <div className="flex flex-wrap pt-5">
               <h1 className="font-semibold">Full-time</h1>
               <h1 className="pl-20">Faixa salarial: R$7.000</h1>
-            </a>
-          </a>
+            </div>
+          </div>
         </div>
         <div className="border-2 w-[700px] rounded-lg">
-          <a href="#" className="flex flex-col p-10">
+          <div className="flex flex-col p-10">
             <h1 className="font-bold text-2xl">Desenvolvedor(a) Back-end</h1>
-            <a href="" className="flex flex-wrap pt-5">
+            <div className="flex flex-wrap pt-5">
               <h1 className="font-semibold">Full-time</h1>
               <h1 className="pl-20">Faixa salarial: R$8.000</h1>
-            </a>
-          </a>
+            </div>
+          </div>
         </div>
       </section>
       <Splide className='p-20'>
         <SplideSlide className='flex justify-center items-center'>
-          <img src="/images/Content.png" alt="Image 1" className='' />
+          <Image alt="" className="image" width={1216} height={404} src="/images/Content.png" />
         </SplideSlide>
         <SplideSlide className='flex justify-center items-center'>
-          <img src="/images/Content.png" alt="Image 1" className='' />
+          <Image alt="" className="image" width={1216} height={404} src="/images/Content.png" />
         </SplideSlide>
         <SplideSlide className='flex justify-center items-center'>
-          <img src="/images/Content.png" alt="Image 1" className='' />
+          <Image alt="" className="image" width={1216} height={404} src="/images/Content.png" />
         </SplideSlide>
       </Splide>
       <footer className="cor flex flex-col justify-center items-center ">
