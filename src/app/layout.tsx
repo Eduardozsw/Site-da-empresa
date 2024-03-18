@@ -26,7 +26,7 @@ export default function RootLayout({
           <span className="self-center text-1xl font-semibold whitespace-nowrap">OptimusTech</span>
         </div>
         <div className="flex items-center space-x-3 rtl:space-x-reverse">
-          <Link href='/home' className="text-1xl font-semibold">Home</Link>
+          <Link href='/' className="text-1xl font-semibold">Home</Link>
           <Link href='/produtos' className="text-1xl font-semibold">Produtos</Link>
           <Link href='/recuros' className="text-1xl font-semibold">Recursos</Link>
           <Link href='/sobre' className="text-1xl font-semibold">Sobre nós</Link>

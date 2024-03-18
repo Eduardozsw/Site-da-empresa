@@ -1,8 +1,11 @@
 'use client'
+import Layout from './layout'
 import Image from "next/image";
+import { useRouter } from "next/navigation"
 import time from "@/assets/Image.png";
 import {Splide, SplideSlide} from '@splidejs/react-splide';
 import '@splidejs/splide/css';
+import Produtos from './app/(public)/produtos/page';
 
 export default function Home() {
   return (

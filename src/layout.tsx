@@ -26,14 +26,14 @@ export default function RootLayout({
           <span className="self-center text-1xl font-semibold whitespace-nowrap">OptimusTech</span>
         </div>
         <div className="flex items-center space-x-3 rtl:space-x-reverse">
-          <Link href='/home'className="text-1xl font-semibold">Home</Link>
-          <Link href='/' className="text-1xl font-semibold">Inscricoes</Link>
-          <Link href='/' className="text-1xl font-semibold">Contratos</Link>
-          <Link href='/' className="text-1xl font-semibold">Pagamentos</Link>
-          <Link href='/' className="text-1xl font-semibold">configurações</Link>
+          <Link href='/' className="text-1xl font-semibold">Home</Link>
+          <Link href='/produtos' className="text-1xl font-semibold">Produtos</Link>
+          <Link href='/recuros' className="text-1xl font-semibold">Recursos</Link>
+          <Link href='/sobre' className="text-1xl font-semibold">Sobre nós</Link>
         </div>
         <div className="space-x-3">
-          <Link href='/home' className="buto p-3 rounded-lg text-1xl font-semibold text-white">Sair</Link>
+          <Link href='/login' className="text-1xl font-semibold">Entrar</Link>
+          <Link href='/register' className="buto text-1xl font-semibold p-3 rounded-lg text-white">Cadastrar</Link>
         </div>
       </nav>
         {children}

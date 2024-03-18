@@ -1,11 +1,8 @@
 'use client';
 
-import { useRouter } from "next/navigation"
 
 
 export default function LoginPage() {
-
-    const router = useRouter();
 
     return <>
         <section className="flex flex-col items-center">
