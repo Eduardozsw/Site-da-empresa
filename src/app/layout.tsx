@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-      <nav className="flex flex-wrap items-center justify-around mx-auto p-4 ">
+      <nav className="flex flex-wrap items-center justify-around mx-auto p-4">
         <div className="flex items-center space-x-3 rtl:space-x-reverse"> {/* tag a ta servindo pra "alinhar" o texto*/}
           <Image alt="Imagem da logo" width={32} height={32} src={Logo} />
           <span className="self-center text-1xl font-semibold whitespace-nowrap">OptimusTech</span>
