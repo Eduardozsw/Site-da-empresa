@@ -20,22 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-      <nav className="flex flex-wrap items-center justify-around mx-auto p-4">
-        <div className="flex items-center space-x-3 rtl:space-x-reverse"> {/* tag a ta servindo pra "alinhar" o texto*/}
-          <Image alt="Imagem da logo" width={32} height={32} src={Logo} />
-          <span className="self-center text-1xl font-semibold whitespace-nowrap">OptimusTech</span>
-        </div>
-        <div className="flex items-center space-x-3 rtl:space-x-reverse">
-          <Link href='/' className="text-1xl font-semibold">Home</Link>
-          <Link href='/produtos' className="text-1xl font-semibold">Produtos</Link>
-          <Link href='/recuros' className="text-1xl font-semibold">Recursos</Link>
-          <Link href='/sobre' className="text-1xl font-semibold">Sobre nós</Link>
-        </div>
-        <div className="space-x-3">
-          <Link href='/login' className="text-1xl font-semibold">Entrar</Link>
-          <Link href='/register' className="buto text-1xl font-semibold p-3 rounded-lg text-white">Cadastrar</Link>
-        </div>
-      </nav>
+
         {children}
         </body>
     </html>

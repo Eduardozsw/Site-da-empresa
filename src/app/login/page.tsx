@@ -11,6 +11,7 @@ export default function LoginPage() {
              onSubmit={() => {
                 router.push('inscricoes');
                 }}>
+                    
                 <div className="flex flex-col text-center">
                     <label className="font-bold">Email:</label>
                     <input className="border-2 w-[275px] text-center rounded-lg" />
