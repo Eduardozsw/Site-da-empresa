@@ -52,5 +52,10 @@
 }
 
 .tec{
-    padding-top: 2px;
+    padding-top: 4px;
+}
+
+.box {
+    width: 400px;
+    height: 200px;
 }
