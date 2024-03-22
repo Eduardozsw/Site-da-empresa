@@ -26,13 +26,13 @@ export default function RootLayout({
         </div>
         <div className="flex items-center space-x-3 rtl:space-x-reverse">
           <Link href='/' className="text-1xl font-semibold">Home</Link>
-          <Link href='/configuracoes' className="text-1xl font-semibold">Configurações</Link>
-          <Link href='/contratos' className="text-1xl font-semibold">Contratos</Link>
-          <Link href='/inscricoes' className="text-1xl font-semibold">Inscrições</Link>
-          <Link href='/pagamentos' className="text-1xl font-semibold">Pagamentos</Link>
+          <Link href='/private/configuracoes' className="text-1xl font-semibold">Configurações</Link>
+          <Link href='/private/contratos' className="text-1xl font-semibold">Contratos</Link>
+          <Link href='/private/inscricoes' className="text-1xl font-semibold">Inscrições</Link>
+          <Link href='/private/pagamentos' className="text-1xl font-semibold">Pagamentos</Link>
         </div>
         <div className="space-x-3">
-          <Link href='/login' className="text-1xl font-semibold">Entrar</Link>
+          <Link href='/auth/login' className="text-1xl font-semibold">Entrar</Link>
           <Link href='/register' className="buto text-1xl font-semibold p-3 rounded-lg text-white">Cadastrar</Link>
         </div>
       </nav>

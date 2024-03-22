@@ -31,9 +31,10 @@ export default function PublicLayout({
                     <Link href='/produtos' className="text-1xl font-semibold">Produtos</Link>
                     <Link href='/tecnologias2' className="text-1xl font-semibold">Tecnologias</Link>
                     <Link href='/sobre' className="text-1xl font-semibold">Sobre nós</Link>
+                    <Link href='/private/inscricoes' className="text-1xl font-semibold">private</Link>
                 </div>
                 <div className="space-x-3">
-                    <Link href='/login' className="text-1xl font-semibold">Entrar</Link>
+                    <Link href='/auth/login' className="text-1xl font-semibold">Entrar</Link>
                     <Link href='/register' className="buto text-1xl font-semibold p-3 rounded-lg text-white">Cadastrar</Link>
                 </div>
             </nav>

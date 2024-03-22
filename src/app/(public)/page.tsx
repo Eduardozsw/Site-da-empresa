@@ -1,10 +1,12 @@
 'use client'
 import Image from "next/image";
 import time from "@/assets/Image.png";
-import {Splide, SplideSlide} from '@splidejs/react-splide';
+import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/splide/css';
+import { useSession } from "next-auth/react";
 
 export default function Home() {
+  const { data: session } = useSession()
   return (
     <main className="">
       <section className=" p-20 flex flex-col justify-center items-center">

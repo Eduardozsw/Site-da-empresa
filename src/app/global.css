@@ -59,3 +59,8 @@
     width: 400px;
     height: 200px;
 }
+
+.bg-color {
+    color: white;
+    background-color: #8E2424;
+}
